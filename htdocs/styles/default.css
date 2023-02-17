@@ -1,0 +1,38 @@
+html, body {
+  padding-top: 0%;
+  padding-bottom: 0%;
+  padding-left: 0%;
+  padding-right: 0%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+nav.navbar {
+  background-color: #515dfc;
+  padding-top: 0.5%;
+  padding-bottom: 0.5%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+
+a.navbar-header {
+  color: #e2e2e2;
+  font-weight: bold;
+  font-size: x-large;
+  text-decoration: none;
+}
+
+div.container {
+  width: 100%;
+}
+
+div .container-left {
+  width: 30%;
+}
+div .container-right {
+  width: 70%;
+}
+
+/*# sourceMappingURL=default.css.map */

@@ -1,0 +1,71 @@
+
+$colors-palette:
+(
+    "background-primary": #8088fc,
+    "background-accent": #515dfc,
+
+    "foreground-primary": #e2e2e2
+);
+
+@function select-color($color-key)
+{
+    @return map-get($colors-palette, $color-key);
+}
+
+$container-left-width: 30%;
+$container-right-width: 70%;
+
+html, body
+{
+    padding-top: 0%;
+    padding-bottom: 0%;
+
+    padding-left: 0%;
+    padding-right: 0%;
+
+    margin-top: 0%;
+    margin-bottom: 0%;
+
+    margin-left: 0%;
+    margin-right: 0%;
+}
+
+nav.navbar
+{
+    background-color: select-color("background-accent");
+    
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+a.navbar-header
+{
+    color: select-color("foreground-primary");
+
+    font-weight: bold;
+    font-size: x-large;
+
+    text-decoration: none;
+}
+
+div.container
+{
+    width: 100%;
+}
+
+div
+{
+    .container-left
+    {
+        width: $container-left-width;
+    }
+
+    .container-right
+    {
+        width: $container-right-width;
+    }
+}
+
